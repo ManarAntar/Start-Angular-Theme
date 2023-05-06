@@ -1,0 +1,109 @@
+h1,
+p {
+    color: #2c3e50 !important;
+}
+.icon::before {
+    background-color: #2c3e50 !important;
+}
+
+.icon::after {
+    background-color: #2c3e50 !important;
+}
+
+.portfoilo-item-layer {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(26, 188, 156, 0.9);
+    width: 94%;
+}
+.portfoilo-item-layer {
+    font-size: 85px;
+    border: none !important;
+}
+.portfoilo-item:hover .portfoilo-item-layer {
+    opacity: 1 !important;
+}
+.showBox {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.showBox-Item {
+    width: 45%;
+    /* height: 700px; */
+}
+.closeIcon {
+    right: 0px;
+    top: 20px;
+    cursor: pointer;
+    color: rgb(53, 103, 53) !important;
+}
+
+@media(max-width:767px) {
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    .icon::before {
+        width: 100px;
+    }
+    .icon::after {
+        width: 100px;
+    }
+    .showBox-Item {
+        width: 85%;
+        padding: 38px 4px !important;
+    }
+    .fs-5{
+        font-size: .9rem!important;
+    }
+    .showBox-Item img {
+        width:75% !important;
+        margin:5px auto !important;
+    }
+    .alert{
+        padding-top: 40px!important;
+    }
+    .closeIcon{
+        top: 30px;
+        right: 5px;
+    }
+    .alert .icon::before{
+        right:9px;
+    }
+    .alert .icon::after{
+        left:9px;
+    }
+    .alert p{
+        margin-bottom: 10px !important;
+    }
+};
+
+@media(min-width:768px) and (max-width:992px) {
+     h1 {
+        font-size: 3rem !important;
+    }
+    .icon::before {
+        width: 130px;
+    }
+    .icon::after {
+        width: 130px;
+    }
+     .showBox-Item {
+        width: 75%;
+        padding: 38px 4px !important;
+    }
+    .alert p{
+        margin-bottom: 30px !important;
+    }
+    .showBox-Item img {
+        width:65% !important;
+         margin:20px auto !important; 
+     }
+     .closeIcon{
+        top: 15px !important;
+        right: 8px !important;
+    }
+    .alert .icon::before{
+        right:100px !important;
+    }
+    .alert .icon::after{
+        left:100px !important;
+    }
+}

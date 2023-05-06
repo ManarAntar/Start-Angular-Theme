@@ -1,0 +1,64 @@
+/* .contact {
+    height: 150vh;
+} */
+
+h1,
+p {
+    color: #2c3e50 !important;
+}
+.icon::before {
+    background-color: #2c3e50 !important;
+}
+.icon::after {
+    background-color: #2c3e50 !important;
+}
+.form-control {
+    border: none;
+    border-bottom: 1px solid #e9ecef !important;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+button {
+    background-color: #1abc9c !important;
+}
+button:hover {
+    background-color: #148f77 !important;
+}
+@media(max-width:767px) {
+    .contact{
+        padding: 48px 5px !important;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    .icon::before {
+        width: 100px;
+    }
+    .icon::after {
+        width: 100px;
+    }
+    .form-control {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+}
+
+@media(min-width:768px) and (max-width:992px) {
+    h1 {
+        font-size: 3rem !important;
+    }
+    .icon::before {
+        width: 130px;
+    }
+
+    .icon::after {
+        width: 130px;
+    }
+    .form-control {
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+}

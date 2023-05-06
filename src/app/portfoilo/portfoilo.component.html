@@ -1,0 +1,29 @@
+<div class="portfoilo">
+    <div class="container d-flex justify-content-center align-items-center mb-5 flex-column mt-5">
+        <h1 class="fw-bold">PORTFOLIO</h1>
+        <p class="icon fs-2 mb-5 position-relative"><i class="fa-solid fa-star"></i></p>
+        <div class="row gy-4">
+            <div class="col-md-4 portfoilo-item position-relative" *ngFor="let one of Items">
+                <button (click)="show(one)"class="portfoilo-item-layer rounded-3 text-center d-flex justify-content-center align-items-center opacity-0 mx-auto h-100 top-0 bottom-0 start-0 end-0 position-absolute"><i class="fa-solid fa-plus fw-bolder text-white"></i></button>
+                    <img [src]="one.image" alt="" class="w-100 rounded-3">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div [class]="atClick.length>0 ? 'd-flex':'d-none'"
+            class="showBox justify-content-center align-items-center position-fixed top-0 bottom-0 end-0 start-0 overflow-hidden">
+            <div class="showBox-Item bg-white text-black p-5 position-relative">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="alert text-center p-3 ">
+                        <p (click)="close()"class='closeIcon position-absolute fw-bolder'><i class=" fw-bolder fa-solid fa-xmark fs-2 p-2 cursor-pointer"></i></p>
+                        <h2 class="fw-bold mt-4 mb-1">{{name}}</h2>
+                        <p class="icon fs-2 mb-3 position-relative"><i class="fa-solid fa-star"></i></p>
+                        <img [src]="imgSrc" class='w-75 mb-2' alt="">
+                        <p class="lead fs-5 mt-2">{{description}}</p>
+                        <button class="btn btn-success"(click)="close()"><i class="fa-solid fa-xmark"></i>    Close Window</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>

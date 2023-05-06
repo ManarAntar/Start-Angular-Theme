@@ -1,0 +1,51 @@
+h1 {
+    font-size: 4rem;
+}
+.icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    background-color: white;
+    width: 150px;
+    height: 4px;
+    border-radius: 14%;
+}
+.icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    background-color: white;
+    width: 150px;
+    height: 4px;
+    border-radius: 14%;
+}
+
+@media(max-width:767px) {
+    h1 {
+        font-size: 2rem !important;
+    }
+    .icon::before {
+        width: 90px;
+        top: 50%;
+        right: 38px;
+    }
+    .icon::after {
+        width: 90px;
+        top: 50%;
+        left: 38px;
+    }
+}
+
+@media(min-width:768px) and (max-width:992px) {
+    h1 {
+        font-size: 2.3rem !important;
+    }
+    .icon::before {
+        width: 130px;
+    }
+    .icon::after {
+        width: 130px;
+    }
+}

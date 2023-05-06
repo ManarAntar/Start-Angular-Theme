@@ -1,0 +1,47 @@
+.footer{
+    background-color: #2c3e50;
+}
+p{
+    font-weight: 400;
+}
+ul{
+    padding-left:0px ;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a i{
+    color:white;
+}
+.socialLinks ul li a{
+    width: 3.25rem;
+    height: 3.25rem;
+}
+ ul li a:hover i{
+    color:#2c3e50 !important;
+}
+.copyRight {
+    background-color: #1a252f;
+}
+@media(max-width:767px) {
+    .footer{
+        padding: 15px !important;
+    }
+    .footer .col-lg-4{
+        margin: 10px 0 !important;
+    }
+    .footer h4{
+        margin-bottom:13px !important ;
+        font-size: 1.1rem;
+        font-weight: 600 !important;
+    }
+    .footer .lead{
+        font-size: 1.1rem;
+    }
+    ul li a{
+        padding: 8px !important;
+    }
+    ul li a i{
+        font-size: 10px!important;
+    }
+}

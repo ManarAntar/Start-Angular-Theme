@@ -1,0 +1,18 @@
+.home{
+    /* height: 110vh; */
+    background-color: #1abc9c !important;
+}
+@media(max-width:767px){
+    .home{
+        padding:48px 5px !important;
+    }
+    .home img{
+        width: 50% !important;
+    }
+    .container{
+        padding: 10px !important;
+    }
+}
+@media(min-width:768px) and (max-width:992px){
+
+}

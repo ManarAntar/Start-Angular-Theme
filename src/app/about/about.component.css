@@ -1,0 +1,16 @@
+.about {
+    background-color: #1abc9c !important;
+}
+@media(max-width:767px) {
+    .about{
+        padding: 48px 10px !important;
+    }
+    .about-txt{
+        margin-top:20px;
+    }
+}
+@media(min-width:768px) and (max-width:992px) {
+    .about-txt{
+        margin-top:20px;
+    }
+}
